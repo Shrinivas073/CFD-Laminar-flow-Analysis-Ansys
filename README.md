@@ -51,12 +51,6 @@ This project serves as a foundational study in **internal flow analysis, viscous
 
 - [⚙️ Solver Setup](#️-solver-setup)
 
-- [ Material Properties](#-material-properties)
-
-- [ Boundary Conditions](#-boundary-conditions)
-
-- [ Reynolds Number & Inlet Velocity Calculation](#-reynolds-number--inlet-velocity-calculation)
-
 - [📉 Solution & Convergence](#-solution--convergence)
 
 - [📊 Results & Post-Processing](#-results--post-processing)
@@ -222,7 +216,7 @@ The simulation was performed using a **2D pressure-based steady-state solver** i
 
 ---
 
-#  Material Properties
+##  Material Properties
 
 **Material:** Water
 
@@ -233,7 +227,7 @@ The simulation was performed using a **2D pressure-based steady-state solver** i
 
 ---
 
-#  Boundary Conditions
+##  Boundary Conditions
 
 The computational domain was configured to represent fully internal laminar flow through a circular pipe.
 
@@ -243,9 +237,25 @@ The computational domain was configured to represent fully internal laminar flow
 | Pipe Wall | No-Slip Wall |
 | Pressure Outlet | 0 Pa (Gauge) |
 
+## Boundary Conditions
+
+<p align="center">
+
+<img src="Boundary Conditions.png" width="700">
+
+</p>
+
+<p align="center">
+
+<img src="Initial Conditions.png" width="700">
+
+</p>
+
+> **Figure 3:** Boundary conditions applied for the 2D Circular Pipe.
+
 ---
 
-#  Reynolds Number & Inlet Velocity Calculation
+##  Reynolds Number & Inlet Velocity Calculation
 
 The inlet velocity was calculated using the Reynolds Number relation to ensure laminar flow at **Re = 100**.
 
@@ -261,15 +271,12 @@ The inlet velocity was calculated using the Reynolds Number relation to ensure l
 Using,
 
 \[
-Re=ρVD / μ
-
-\]
+Re=ρVD / μ \]
 
 Rearranging,
 
 \[
-V=\frac{Re \times \mu}{\rho \times D}
-\]
+V= Re μ / ρ D \]
 
 ### Calculated Inlet Velocity
 
@@ -281,7 +288,7 @@ This inlet velocity ensures that the flow remains within the **laminar regime (R
 
 ---
 
-#  Numerical Methods
+##  Numerical Methods
 
 | Parameter | Method |
 |-----------|--------|
@@ -306,22 +313,201 @@ The solution converged smoothly with stable residual behaviour.
 
 ---
 
-## Residual Plot
-
-<p align="center">
-
-<img src="Residuals.png" width="750">
-
-</p>
-
-> **Figure 3:** Residual history demonstrating stable convergence of the numerical solution.
-
----
-
 ## 💡 Engineering Note
 
 As fluid enters the pipe with an initially uniform velocity profile, viscous forces at the wall generate boundary layers that grow downstream due to the no-slip condition. This momentum diffusion gradually transforms the inlet profile into the characteristic fully developed **parabolic velocity distribution** of laminar pipe flow.
 
+# 📊 Results & Discussion
+
+The simulation successfully captured the hydrodynamic development of laminar flow through the circular pipe. The velocity and pressure contours clearly illustrated the influence of viscosity and wall friction on the evolving flow field.
+
+---
+
+## 📷 Results
+
+<p align="center">
+
+<img src="Images/Velocity_Contour.png" width="750">
+
+</p>
+
+> **Figure 4:** Velocity contour showing the development of the laminar flow profile.
+
+<br>
+
+<p align="center">
+
+<img src="Images/Dynamic_Pressure.png" width="750">
+
+</p>
+
+> **Figure 5:** Dynamic pressure distribution along the pipe.
+
+<br>
+
+<p align="center">
+
+<img src="Images/Total_Pressure.png" width="750">
+
+</p>
+
+> **Figure 6:** Total pressure variation throughout the computational domain.
+
+---
+
+## 🔍 Key Observations
+
+- Velocity increased progressively toward the pipe centreline.
+- Velocity reduced to zero at the walls due to the no-slip condition.
+- Boundary layers developed from the inlet and gradually merged downstream.
+- Pressure decreased continuously along the flow direction because of viscous friction.
+
+---
+
+# 🧠 Engineering Discussion
+
+The simulation demonstrates the classical behaviour of **laminar internal flow**. As the fluid enters the pipe, wall friction slows the fluid adjacent to the walls, initiating boundary layer growth. These boundary layers continue to develop until they merge, producing the fully developed **parabolic velocity profile** predicted by fluid mechanics.
+
+The numerical results closely match the expected physical behaviour, validating both the CFD setup and the governing flow physics.
+
+---
+
+# ✅ Validation
+
+The numerical solution agrees with the theoretical characteristics of laminar pipe flow.
+
+| Validation Parameter | Status |
+|----------------------|--------|
+| Laminar Flow Regime (Re = 100) | ✅ Verified |
+| Velocity Profile Development | ✅ Verified |
+| No-Slip Wall Behaviour | ✅ Verified |
+| Pressure Drop Along Pipe | ✅ Verified |
+| Numerical Stability | ✅ Stable |
+
+---
+
+# 💡 Key Learnings
+
+- Application of CFD to internal laminar flow analysis.
+- Development of hydrodynamic boundary layers.
+- Influence of viscosity on momentum transport.
+- Effect of wall friction on velocity and pressure distribution.
+- Interpretation of internal flow behaviour through CFD visualization.
+
+---
+
+# 🛠️ Skills Demonstrated
+
+- Computational Fluid Dynamics (CFD)
+- ANSYS Fluent 2026 R1
+- ANSYS DesignModeler
+- ANSYS Meshing
+- Internal Flow Analysis
+- Laminar Flow Simulation
+- Structured Mesh Generation
+- Solver Configuration
+- Boundary Condition Setup
+- CFD Post-Processing
+- Engineering Interpretation
+
+---
+
+# 📂 Repository Structure
+
+```text
+CFD-Laminar-Pipe-Flow/
+│
+├── README.md
+├── LICENSE
+├── .gitignore
+│
+├── Images/
+│   ├── Project_Cover.png
+│   ├── Geometry.png
+│   ├── Mesh.png
+│   ├── Velocity_Contour.png
+│   ├── Dynamic_Pressure.png
+│   ├── Total_Pressure.png
+│   └── Residuals.png
+│
+├── ANSYS_Files/
+│   ├── Geometry.agdb
+│   ├── Mesh.msh
+│   ├── Laminar_Pipe_Flow.cas.h5
+│   └── Laminar_Pipe_Flow.dat.h5
+│
+└── Documentation/
+    └── Project_Report.pdf
+```
+
+---
+
+# 🚀 Future Improvements
+
+Potential extensions of this project include:
+
+- Mesh Independence Study
+- Higher Reynolds Number Simulations
+- Transition to Turbulent Flow
+- Pipe Flow with Heat Transfer
+- Three-Dimensional Pipe Analysis
+- Flow Through Bends and Elbows
+
+---
+
+# 📚 References
+
+1. White, F.M., *Fluid Mechanics*.
+2. ANSYS Fluent Theory Guide.
+3. Çengel, Y.A., *Fluid Mechanics: Fundamentals and Applications*.
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License**. Feel free to use this repository for educational and learning purposes with appropriate attribution.
+
+---
+
+# 👨‍💻 Author
+
+## Shrinivas
+
+**Mechanical Engineer | Aspiring CFD Engineer**
+
+Passionate about **Computational Fluid Dynamics (CFD), Fluid Mechanics, Heat Transfer, and Aerodynamics**, with a focus on developing simulation-driven engineering solutions using ANSYS Fluent.
+
+### 🌐 Connect with Me
+
+<p align="left">
+
+<a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME/" target="_blank">
+<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
+
+<a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+<a href="https://www.notion.so/YOUR-NOTION-PAGE" target="_blank">
+<img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"/>
+</a>
+
+</p>
+
+📫 **Email:** your.email@example.com
+
+---
+
+<div align="center">
+
+### ⭐ If you found this project useful, consider giving it a Star!
+
+It motivates me to continue documenting and sharing my CFD learning journey.
+
+**Let's connect and grow together in the field of Computational Fluid Dynamics. 🚀**
+
+</div>
 
 
 
