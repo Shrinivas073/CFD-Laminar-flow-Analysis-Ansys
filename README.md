@@ -424,7 +424,7 @@ Passionate about **Computational Fluid Dynamics (CFD), Fluid Mechanics, Heat Tra
 
 <p align="left">
 
-<a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME/" target="_blank">
+<a href="https://www.linkedin.com/in/shrinivas471/" target="_blank">
 <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
 
