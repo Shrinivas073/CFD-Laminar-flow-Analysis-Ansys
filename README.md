@@ -333,7 +333,7 @@ The simulation successfully captured the hydrodynamic development of laminar flo
 
 <p align="center">
 
-<img src="Viscous flow Velocity Proile.png" width="750">
+<img src="Viscous flow Velocity Profile.png" width="750">
 
 </p>
 
@@ -396,7 +396,6 @@ The numerical solution agrees with the theoretical characteristics of laminar pi
 - Development of hydrodynamic boundary layers.
 - Influence of viscosity on momentum transport.
 - Effect of wall friction on velocity and pressure distribution.
-- Interpretation of internal flow behaviour through CFD visualization.
 
 ---
 
@@ -410,20 +409,6 @@ Potential extensions of this project include:
 - Pipe Flow with Heat Transfer
 - Three-Dimensional Pipe Analysis
 - Flow Through Bends and Elbows
-
----
-
-# 📚 References
-
-1. White, F.M., *Fluid Mechanics*.
-2. ANSYS Fluent Theory Guide.
-3. Çengel, Y.A., *Fluid Mechanics: Fundamentals and Applications*.
-
----
-
-# 📄 License
-
-This project is licensed under the **MIT License**. Feel free to use this repository for educational and learning purposes with appropriate attribution.
 
 ---
 
