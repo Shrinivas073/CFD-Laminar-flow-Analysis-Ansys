@@ -14,7 +14,6 @@
 
 ![Internal Flow](https://img.shields.io/badge/Application-Internal%20Flow-orange?style=for-the-badge)
 
-![License](https://img.shields.io/badge/License-MIT-success?style=for-the-badge)
 
 </p>
 
