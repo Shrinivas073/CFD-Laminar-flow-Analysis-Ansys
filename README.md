@@ -204,7 +204,122 @@ The selected mesh ensures smooth convergence and reliable resolution of velocity
 
 ---
 
+# ⚙️ Solver Setup
 
+The simulation was performed using a **2D pressure-based steady-state solver** in **ANSYS Fluent 2026 R1** to investigate laminar flow development inside a circular pipe.
+
+---
+
+##  Solver Configuration
+
+| Setting | Configuration |
+|---------|---------------|
+| Solver Type | Pressure-Based |
+| Analysis | Steady-State |
+| Space | 2D |
+| Flow Model | Laminar |
+| Pressure-Velocity Coupling | SIMPLE |
+
+---
+
+#  Material Properties
+
+**Material:** Water
+
+| Property | Value |
+|---------|------:|
+| Density | 998.2 kg/m³ |
+| Dynamic Viscosity | 0.001003 Pa·s |
+
+---
+
+#  Boundary Conditions
+
+The computational domain was configured to represent fully internal laminar flow through a circular pipe.
+
+| Boundary | Condition |
+|----------|-----------|
+| Velocity Inlet | 0.005024 m/s |
+| Pipe Wall | No-Slip Wall |
+| Pressure Outlet | 0 Pa (Gauge) |
+
+---
+
+#  Reynolds Number & Inlet Velocity Calculation
+
+The inlet velocity was calculated using the Reynolds Number relation to ensure laminar flow at **Re = 100**.
+
+### Input Parameters
+
+| Parameter | Value |
+|----------|------:|
+| Reynolds Number (Re) | 100 |
+| Density (ρ) | 998.2 kg/m³ |
+| Dynamic Viscosity (μ) | 0.001003 Pa·s |
+| Pipe Diameter (D) | 0.02 m |
+
+Using,
+
+\[
+Re=\frac{\rho V D}{\mu}
+\]
+
+Rearranging,
+
+\[
+V=\frac{Re \times \mu}{\rho \times D}
+\]
+
+### Calculated Inlet Velocity
+
+| Parameter | Value |
+|----------|------:|
+| Velocity (V) | **0.005024 m/s** |
+
+This inlet velocity ensures that the flow remains within the **laminar regime (Re = 100)** throughout the simulation.
+
+---
+
+#  Numerical Methods
+
+| Parameter | Method |
+|-----------|--------|
+| Pressure-Velocity Coupling | SIMPLE |
+| Spatial Discretization | Second Order |
+
+The SIMPLE algorithm provides stable pressure-velocity coupling, while second-order discretization improves numerical accuracy by reducing discretization errors.
+
+---
+
+# 📉 Convergence
+
+The solution converged smoothly with stable residual behaviour.
+
+### Convergence Summary
+
+| Parameter | Status |
+|-----------|--------|
+| Residuals | Converged |
+| Solution Stability | Stable |
+| Flow Development | Successfully Achieved |
+
+---
+
+## Residual Plot
+
+<p align="center">
+
+<img src="Residuals.png" width="750">
+
+</p>
+
+> **Figure 3:** Residual history demonstrating stable convergence of the numerical solution.
+
+---
+
+## 💡 Engineering Note
+
+As fluid enters the pipe with an initially uniform velocity profile, viscous forces at the wall generate boundary layers that grow downstream due to the no-slip condition. This momentum diffusion gradually transforms the inlet profile into the characteristic fully developed **parabolic velocity distribution** of laminar pipe flow.
 
 
 
