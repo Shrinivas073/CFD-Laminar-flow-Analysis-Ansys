@@ -57,7 +57,7 @@ This project serves as a foundational study in **internal flow analysis, viscous
 
 - [🚪 Boundary Conditions](#-boundary-conditions)
 
-- [🧮 Reynolds Number & Inlet Velocity Calculation](#-reynolds-number--inlet-velocity-calculation)
+- [💧Reynolds Number & Inlet Velocity Calculation](#-reynolds-number--inlet-velocity-calculation)
 
 - [📉 Solution & Convergence](#-solution--convergence)
 
@@ -75,33 +75,6 @@ This project serves as a foundational study in **internal flow analysis, viscous
 
 - [🚀 Future Improvements](#-future-improvements)
 
-- [📚 References](#-references)
-
-- [📄 License](#-license)
-
----
-
-# ⭐ Repository Highlights
-
-✔️ 2D Steady-State Laminar Pipe Flow
-
-✔️ Reynolds Number Based Flow Analysis
-
-✔️ Boundary Layer Development
-
-✔️ Velocity Profile Evolution
-
-✔️ Structured Quadrilateral Mesh
-
-✔️ Pressure-Based Solver
-
-✔️ ANSYS Fluent 2026 R1
-
-✔️ Engineering Interpretation of Internal Flow Physics
-
-✔️ Professional CFD Documentation
-
-✔️ Recruiter-Friendly Project Presentation
 
 ---
 
