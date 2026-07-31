@@ -313,45 +313,49 @@ The solution converged smoothly with stable residual behaviour.
 
 ---
 
-## 💡 Engineering Note
-
-As fluid enters the pipe with an initially uniform velocity profile, viscous forces at the wall generate boundary layers that grow downstream due to the no-slip condition. This momentum diffusion gradually transforms the inlet profile into the characteristic fully developed **parabolic velocity distribution** of laminar pipe flow.
-
 # 📊 Results & Discussion
 
 The simulation successfully captured the hydrodynamic development of laminar flow through the circular pipe. The velocity and pressure contours clearly illustrated the influence of viscosity and wall friction on the evolving flow field.
 
 ---
 
-## 📷 Results
+## Results
 
 <p align="center">
 
-<img src="Images/Velocity_Contour.png" width="750">
+<img src="Velocity Magnitude.png" width="750">
 
 </p>
 
-> **Figure 4:** Velocity contour showing the development of the laminar flow profile.
+> **Figure 4:** Velocity Magnitude contour showing the velocity Variation along the Pipe length.
 
 <br>
 
 <p align="center">
 
-<img src="Images/Dynamic_Pressure.png" width="750">
+<img src="Viscous flow Velocity Proile.png" width="750">
 
 </p>
 
-> **Figure 5:** Dynamic pressure distribution along the pipe.
+> **Figure 5:** The above Graph Represents the Velocity Profile of laminar flow.
+
+<p align="center">
+
+<img src="Dynamic Pressure.png" width="750">
+
+</p>
+
+> **Figure 6:** Dynamic pressure distribution along the pipe.
 
 <br>
 
 <p align="center">
 
-<img src="Images/Total_Pressure.png" width="750">
+<img src="Total Pressure.png" width="750">
 
 </p>
 
-> **Figure 6:** Total pressure variation throughout the computational domain.
+> **Figure 7:** Total pressure variation throughout the computational domain.
 
 ---
 
@@ -393,52 +397,6 @@ The numerical solution agrees with the theoretical characteristics of laminar pi
 - Influence of viscosity on momentum transport.
 - Effect of wall friction on velocity and pressure distribution.
 - Interpretation of internal flow behaviour through CFD visualization.
-
----
-
-# 🛠️ Skills Demonstrated
-
-- Computational Fluid Dynamics (CFD)
-- ANSYS Fluent 2026 R1
-- ANSYS DesignModeler
-- ANSYS Meshing
-- Internal Flow Analysis
-- Laminar Flow Simulation
-- Structured Mesh Generation
-- Solver Configuration
-- Boundary Condition Setup
-- CFD Post-Processing
-- Engineering Interpretation
-
----
-
-# 📂 Repository Structure
-
-```text
-CFD-Laminar-Pipe-Flow/
-│
-├── README.md
-├── LICENSE
-├── .gitignore
-│
-├── Images/
-│   ├── Project_Cover.png
-│   ├── Geometry.png
-│   ├── Mesh.png
-│   ├── Velocity_Contour.png
-│   ├── Dynamic_Pressure.png
-│   ├── Total_Pressure.png
-│   └── Residuals.png
-│
-├── ANSYS_Files/
-│   ├── Geometry.agdb
-│   ├── Mesh.msh
-│   ├── Laminar_Pipe_Flow.cas.h5
-│   └── Laminar_Pipe_Flow.dat.h5
-│
-└── Documentation/
-    └── Project_Report.pdf
-```
 
 ---
 
