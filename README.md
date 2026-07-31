@@ -43,8 +43,6 @@ This project serves as a foundational study in **internal flow analysis, viscous
 
 - [🎯 Project Objectives](#-project-objectives)
 
-- [📚 Engineering Background](#-engineering-background)
-
 - [🌊 Governing Physics](#-governing-physics)
 
 - [🧩 Geometry Creation](#-geometry-creation)
@@ -53,11 +51,11 @@ This project serves as a foundational study in **internal flow analysis, viscous
 
 - [⚙️ Solver Setup](#️-solver-setup)
 
-- [💧 Material Properties](#-material-properties)
+- [ Material Properties](#-material-properties)
 
-- [🚪 Boundary Conditions](#-boundary-conditions)
+- [ Boundary Conditions](#-boundary-conditions)
 
-- [💧Reynolds Number & Inlet Velocity Calculation](#-reynolds-number--inlet-velocity-calculation)
+- [ Reynolds Number & Inlet Velocity Calculation](#-reynolds-number--inlet-velocity-calculation)
 
 - [📉 Solution & Convergence](#-solution--convergence)
 
@@ -69,16 +67,12 @@ This project serves as a foundational study in **internal flow analysis, viscous
 
 - [💡 Key Learnings](#-key-learnings)
 
-- [🛠️ Skills Demonstrated](#️-skills-demonstrated)
-
-- [📂 Repository Structure](#-repository-structure)
-
 - [🚀 Future Improvements](#-future-improvements)
 
 
 ---
 
-## 📷 Repository Preview
+##  Repository Preview
 
 
 <p align="center">
@@ -88,14 +82,6 @@ This project serves as a foundational study in **internal flow analysis, viscous
 </p>
 
 ---
-
-## 📌 About This Repository
-
-This repository is part of my Computational Fluid Dynamics learning portfolio, where I document simulation projects with a strong emphasis on understanding the underlying engineering principles rather than simply presenting software outputs.
-
-Each project is developed to strengthen my understanding of **fluid mechanics, CFD, numerical methods, heat transfer, and engineering analysis** while following professional documentation practices.
-
-I welcome constructive feedback, discussions, and suggestions from the engineering community.
 
 # 🎯 Project Objectives
 
@@ -110,22 +96,6 @@ The primary objectives of this study are:
 - Study the influence of viscous effects and wall shear on boundary layer growth.
 
 - Understand pressure variation and momentum transport in internal flows.
-
-- Gain practical experience in geometry creation, meshing, solver setup, and post-processing using **ANSYS Fluent 2026 R1**.
-
-- Validate the numerical results against the expected behaviour of fully developed laminar pipe flow.
-
----
-
-# 📚 Engineering Background
-
-Internal flows are among the most frequently encountered fluid flow problems in engineering, forming the basis for the design and analysis of piping systems, heat exchangers, hydraulic circuits, cooling channels, and process equipment.
-
-When a fluid enters a pipe, the velocity profile is initially almost uniform. As the fluid travels downstream, the **no-slip condition** causes the velocity at the wall to become zero, creating boundary layers that progressively grow toward the pipe centreline. Once these boundary layers merge, the flow becomes **hydrodynamically fully developed**, exhibiting the classical **parabolic velocity profile** characteristic of laminar flow.
-
-Although this behaviour can be described analytically, CFD provides engineers with the ability to visualize the complete flow development, pressure distribution, and velocity gradients throughout the computational domain.
-
-This project therefore serves as a fundamental study in **internal flow physics**, bridging classical fluid mechanics with modern numerical simulation techniques.
 
 ---
 
@@ -142,7 +112,6 @@ The simulation is based on the following assumptions:
 - Laminar flow regime (Re = 100)
 - Constant fluid properties
 - No-slip wall condition
-- Negligible gravitational effects
 
 Under these assumptions, the flow behaviour is governed by the conservation of **mass** and **momentum**.
 
@@ -152,28 +121,89 @@ As the solution converges, the flow gradually transitions from a nearly uniform 
 
 ---
 
-# 💡 Engineering Significance
+# 🧩 Geometry Creation
 
-Although laminar pipe flow is considered one of the fundamental problems in fluid mechanics, it forms the basis for understanding far more complex internal flow applications.
+The computational model represents a **2D circular pipe fluid domain** developed to investigate steady-state laminar flow at **Reynolds Number 100**.
 
-The concepts explored in this project are directly applicable to:
+A two-dimensional planar geometry was selected to accurately capture the fundamental characteristics of internal flow while maintaining computational efficiency. The model enables visualization of velocity profile development, boundary layer growth, and pressure variation along the pipe length.
 
-- Industrial piping systems
-- Heat exchangers
-- Cooling channels
-- Hydraulic circuits
-- Chemical process equipment
-- Medical flow devices
-- Microfluidic systems
-- Aerospace fuel and cooling lines
+---
 
-Developing a strong understanding of laminar internal flow provides the foundation for advanced CFD studies involving turbulent flows, multiphase systems, conjugate heat transfer, and complex fluid transport phenomena.
+##  Geometry Specifications
+
+| Parameter | Value |
+|-----------|------:|
+| Geometry Type | 2D Circular Pipe |
+| Pipe Length | 0.20 m |
+| Pipe Diameter | 0.02 m |
+| Analysis Type | 2D Steady-State |
+
+---
+
+##  Geometry
+
+<p align="center">
+
+<img src="Geometry.png" width="700">
+
+</p>
 
 
+> **Figure 1:** Computational geometry representing the circular pipe used for laminar flow analysis.
 
 
+---
 
+# 🕸️ Mesh Generation
 
+The computational domain was discretized using a **structured quadrilateral mesh** generated with the **Sweep Method** to accurately resolve the developing boundary layers and velocity gradients along the pipe walls.
+
+A structured mesh provides improved numerical accuracy and lower discretization error, making it well suited for internal flow simulations.
+
+---
+
+##  Mesh Specifications
+
+| Parameter | Value |
+|-----------|------:|
+| Mesh Type | Structured Quadrilateral |
+| Number of Cells | 16000 |
+| Number of Faces | 32440 |
+| Number of Nodes | 16441 |
+| Minimum Orthogonal Quality | 0.999 |
+| Maximum Aspect Ratio | 1.44 |
+
+---
+
+##  Mesh
+
+<p align="center">
+
+<img src="
+  Mesh.png" width="700">
+
+</p>
+
+> **Figure 2:** Structured quadrilateral mesh generated for the computational domain.
+
+---
+
+#  Mesh Quality Assessment
+
+The structured mesh provides a uniform element distribution throughout the pipe, enabling accurate prediction of boundary layer growth and velocity profile evolution while maintaining excellent numerical stability.
+
+### Mesh Quality Evaluation
+
+| Quality Metric | Assessment |
+|----------------|-----------|
+| Element Distribution | Uniform |
+| Mesh Type | Structured |
+| Numerical Accuracy | High |
+| Solution Stability | Excellent |
+
+The selected mesh ensures smooth convergence and reliable resolution of velocity gradients near the pipe wall, where viscous effects are most significant.
+
+---
 
 
 
