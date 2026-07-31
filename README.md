@@ -149,7 +149,7 @@ A two-dimensional planar geometry was selected to accurately capture the fundame
 </p>
 
 
-> **Figure 1:** Computational geometry representing the circular pipe used for laminar flow analysis.
+> **Figure 1:** Computational geometry representing the 2D circular pipe used for laminar flow analysis.
 
 
 ---
