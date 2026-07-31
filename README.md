@@ -412,6 +412,7 @@ Potential extensions of this project include:
 
 ---
 
+
 # 👨‍💻 Author
 
 ## Shrinivas
@@ -424,15 +425,15 @@ Passionate about **Computational Fluid Dynamics (CFD), Fluid Mechanics, Heat Tra
 
 <p align="left">
 
-<a href="https://www.linkedin.com/in/shrinivas471/" target="_blank">
+<a href="https://www.linkedin.com/in/shrinivas471" target="_blank">
 <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
 
-<a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank">
+<a href="https://github.com/Shrinivas073" target="_blank">
 <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
-<a href="https://www.notion.so/YOUR-NOTION-PAGE" target="_blank">
+<a href="https://shrinivas07.notion.site/Aspiring-CFD-Engineer-Aerodynamics-ANSYS-Fluent-Fluid-Dynamics-Flow-Thermal-Analysis-Tur-398644a1903c8045bbc4e377269b809d" target="_blank">
 <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"/>
 </a>
 
