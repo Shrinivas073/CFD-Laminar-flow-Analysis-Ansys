@@ -438,7 +438,7 @@ Passionate about **Computational Fluid Dynamics (CFD), Fluid Mechanics, Heat Tra
 
 </p>
 
-📫 **Email:** your.shrinivas471556@gmail.com
+📫 **Email:** shrinivas471556@gmail.com
 
 ---
 
