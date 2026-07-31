@@ -179,8 +179,7 @@ A structured mesh provides improved numerical accuracy and lower discretization 
 
 <p align="center">
 
-<img src="
-  Mesh.png" width="700">
+<img src="Mesh.png" width="700">
 
 </p>
 
