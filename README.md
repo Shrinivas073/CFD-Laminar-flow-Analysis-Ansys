@@ -261,7 +261,8 @@ The inlet velocity was calculated using the Reynolds Number relation to ensure l
 Using,
 
 \[
-Re=\frac{\rho V D}{\mu}
+Re=ρVD / μ
+
 \]
 
 Rearranging,
