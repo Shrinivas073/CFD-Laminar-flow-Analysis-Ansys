@@ -80,7 +80,6 @@ This project serves as a foundational study in **internal flow analysis, viscous
 
 ## 📷 Repository Preview
 
-> **Replace the image below with your final project cover image or velocity contour.**
 
 <p align="center">
 
