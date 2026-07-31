@@ -84,7 +84,7 @@ This project serves as a foundational study in **internal flow analysis, viscous
 
 <p align="center">
 
-<img src="Images/Project_Cover.png" width="900">
+<img src="Velocity Magnitude.png" width="900">
 
 </p>
 
